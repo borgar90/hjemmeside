@@ -1,0 +1,63 @@
+#blog {
+  flex-direction: column;
+  align-items: center;
+}
+.aBlog {
+  width: 60%;
+  margin-top: 50px;
+}
+.banner {
+  background-image: url("../img/ai.png");
+  background-size: contain;
+  background-position: top;
+  height: 300px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.banner h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px #333;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.fab {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+}
+
+.aBlog {
+  float: right;
+  width: 60%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
