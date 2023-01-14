@@ -17,10 +17,13 @@
       content="Min erfaring med å lage en nettside med hjelp av OpenAI's ChatGPT-modell"
     />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.example.com/blog-post" />
+    <meta
+      property="og:url"
+      content="https://borgar90.github.io/hjemmeside/blogpost.html"
+    />
     <meta
       property="og:image"
-      content="http://www.example.com/images/blog-post-thumbnail.jpg"
+      content="https://borgar90.github.io/hjemmeside/img/ai.png"
     />
     <meta
       property="og:description"
@@ -104,9 +107,19 @@
 
         <div class="aBlog">
           <div class="social-icons">
-            <a href="#" class="share-button">
-              <i class="fab fa-facebook-f"></i>
-            </a>
+            <div
+              class="fb-share-button"
+              data-href="https://borgar90.github.io/hjemmeside/blogpost.html"
+              data-layout="button"
+              data-size="large"
+            >
+              <a
+                target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fborgar90.github.io%2Fhjemmeside%2Fblogpost.html&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore"
+                >Del</a
+              >
+            </div>
             <a href="#">
               <i class="fab fa-linkedin"></i>
             </a>
@@ -183,29 +196,12 @@
 
     <script src="js/main.js"></script>
     <!-- Include the Facebook JavaScript SDK -->
-    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <script>
-      // Initialize the Facebook JavaScript SDK
-      FB.init({
-        appId: "YOUR_APP_ID",
-        xfbml: true,
-        version: "v8.0",
-      });
-
-      // Get the share button element
-      var shareButton = document.getElementById("share-button");
-
-      // Add a click event listener to the share button
-      shareButton.addEventListener("click", function () {
-        // Open the share dialog
-        FB.ui(
-          {
-            method: "share",
-            href: "http://example.com/blog-post",
-          },
-          function (response) {}
-        );
-      });
-    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0"
+      nonce="rkit2cud"
+    ></script>
   </body>
 </html>
